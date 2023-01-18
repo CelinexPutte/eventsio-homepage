@@ -195,6 +195,40 @@ h1 {
 	object-fit: cover;
 }
 
+.carousel {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.carousel-button {
+	border: none;
+	background: none;
+	color: var(--orange);
+	font-size: 2rem;
+}
+
+.carousel-a {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+
+.carousel-picture {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	scroll-snap-align: center;
+}
+
+.carousel-img {
+	object-fit: cover;
+}
+
 /* About */
 
 .about p {
