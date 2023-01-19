@@ -5,7 +5,8 @@
 	--padding-basic: 2rem;
 	--margin-bottom-p: 1.5rem;
 	--arrow-size: 2rem;
-
+	--indicator-size: 6px;
+	--max-indicators: 6;
 }
 
 * {
@@ -258,7 +259,33 @@ h1 {
 	object-fit: cover;
 }
 
+.carousel-indicator {
+	position: absolute;
+	left: auto;
+	right: auto;
+	max-width: calc(var(--max-indicators) * var(--indicator-size) + (var(--max-indicators) - 1) * var(--indicator-size) / 2);
+	pointer-events: none;
+}
 
+.carousel-indicator-span {
+	display: flex;
+	gap: calc(var(--indicator-size) / 2);
+	height: calc(var(--indicator-size));
+}
+
+.carousel-indicator-span-span {
+	flex: 0 0 var(--indicator-size);
+	width: var(--indicator-size);
+	height: var(--indicator-size);
+	border-radius: 50%;
+	background: #fff;
+	opacity: 0.5;
+	transition: opacity 0.2s ease-out;
+}
+
+.carousel-indicator-span-span.is-active {
+	opacity: 1;
+}
 
 /* About */
 

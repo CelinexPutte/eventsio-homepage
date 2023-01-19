@@ -43,5 +43,29 @@ function scrollLeftOrRight(uiEvent) {
  });
  // Volg de <a href=""> niet als we hier zijn gekomen..
  uiEvent.preventDefault();
-
 }
+
+// Indicator carousel
+
+document.querySelector('.carousel-a').addEventListener('click', scrollLeftOrRight);
+
+var carrousel = document.querySelector('.carousel-a');
+var indicator = document.querySelector('.carousel-indicator-span');
+
+var carrouselScrollWidth = carrousel.scrollWidth;
+var totalItems = Math.round(carrouselScrollWidth / carrousel.offsetWidth);
+var active = 0;
+var activeEl = indicator.querySelector('.is-active');
+
+carrousel.addEventListener('scroll', function(uiEvent) {
+ var newActive = Math.round(this.scrollLeft / carrouselScrollWidth * totalItems);
+ if (active != newActive) {
+  activeEl.classList.remove('is-active');
+  activeEl = indicator.children[newActive];
+  activeEl.classList.add('is-active');
+  active = newActive;
+ }
+ if (totalItems > 6) {
+  // TODO ;)
+ }
+});
