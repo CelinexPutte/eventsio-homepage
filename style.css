@@ -178,6 +178,7 @@ h1 {
 	background-color: var(--black);
 	color: var(--orange);
 	font-weight: 700;
+	text-decoration: none;
 	border-radius: 0.3rem;
 	display: flex;
 	margin-left: auto;
