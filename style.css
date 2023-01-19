@@ -4,6 +4,8 @@
 	--orange: #ec7c26;
 	--padding-basic: 2rem;
 	--margin-bottom-p: 1.5rem;
+	--arrow-size: 2rem;
+
 }
 
 * {
@@ -204,19 +206,45 @@ h1 {
 	gap: 0.5rem;
 }
 
-.carousel-button {
-	border: none;
-	background: none;
-	color: var(--orange);
-	font-size: 2rem;
-}
-
 .carousel-a {
 	display: flex;
 	overflow: auto;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
 	scrollbar-width: none;
+	align-items: center;
+}
+
+.carousel-a::before, .carousel-a::after {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	background: #fff;
+	color: var(--orange);
+	font-size: 2rem;
+	font-weight: 600;
+	opacity: 0.5;
+	border-radius: 50%;
+	height: var(--arrow-size);
+	flex: 0 0 var(--arrow-size);
+	transition: opacity 0.2s ease-out;
+}
+
+.carousel-a::before {
+	content: '<';
+	left: 1rem;
+	margin-right: calc(var(--arrow-size) * -1);
+}
+
+.carousel-a::after {
+	content: '>';
+	right: 1rem;
+	margin-left: calc(var(--arrow-size) * -1);
+}
+
+.carousel-a:hover::before, .carousel-a:hover::after, .carousel-a:focus::before, .carousel-a:focus::after {
+	opacity: 1;
 }
 
 .carousel-picture {
@@ -229,6 +257,8 @@ h1 {
 .carousel-img {
 	object-fit: cover;
 }
+
+
 
 /* About */
 
@@ -286,4 +316,19 @@ footer {
 footer p {
 	color: var(--white);
 	margin-bottom: 0;
+}
+
+
+/* Medium screen */
+@media (min-width: 545px) {
+	section {
+		background-color: hotpink;
+	}
+}
+
+/* Large screen */
+@media (min-width: 1280px) {
+	section {
+		background-color: aqua;
+	}
 }
