@@ -218,6 +218,10 @@ h1 {
 	text-decoration: none;
 }
 
+.carousel-a::-webkit-scrollbar { 
+	display: none;
+}
+
 .carousel-a::before, .carousel-a::after {
 	display: inline-flex;
 	align-items: center;
