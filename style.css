@@ -215,6 +215,7 @@ h1 {
 	scroll-snap-type: x mandatory;
 	scrollbar-width: none;
 	align-items: center;
+	text-decoration: none;
 }
 
 .carousel-a::before, .carousel-a::after {
