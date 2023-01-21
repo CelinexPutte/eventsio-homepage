@@ -10,7 +10,7 @@ function menuToggle() {
 }
 
 // Carousel
-document.querySelector(".carousel-a").addEventListener('click', scrollLeftOrRight);
+document.querySelector(".carousel-div").addEventListener('click', scrollLeftOrRight);
 
 function scrollLeftOrRight(uiEvent) {
 
@@ -47,9 +47,9 @@ function scrollLeftOrRight(uiEvent) {
 
 // Indicator carousel
 
-document.querySelector('.carousel-a').addEventListener('click', scrollLeftOrRight);
+document.querySelector('.carousel-div').addEventListener('click', scrollLeftOrRight);
 
-var carrousel = document.querySelector('.carousel-a');
+var carrousel = document.querySelector('.carousel-div');
 var indicator = document.querySelector('.carousel-indicator-span');
 
 var carrouselScrollWidth = carrousel.scrollWidth;

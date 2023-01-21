@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css" />
 		<script src="main.js" defer></script>
 
@@ -21,32 +21,37 @@
 
 		<nav>
 			<ul class="nav-list">
-				<li class="nav-item">Home</li>
-				<li class="nav-item">Projecten</li>
-				<li class="nav-item">Offerte</li>
-				<li class="nav-item">Over ons</li>
-				<li class="nav-item">Contact</li>
+				<li class="nav-item"><a href=".">Home</a></li>
+				<li class="nav-item"><a href=".">Projecten</a></li>
+				<li class="nav-item"><a href=".">Offerte</a></li>
+				<li class="nav-item"><a href=".">Over ons</a></li>
+				<li class="nav-item"><a href=".">Contact</a></li>
 			</ul>
 		</nav>
 
 		<main>
 			<section>
-				<img src="assets/sfeerfoto8.jpg" alt="Mensen proosten met hun glas terwijl er gouden confetti dwarrelt" class="intro-pic" />
+				<img src="assets/sfeerfoto8.jpg" alt="Mensen proosten met hun glas terwijl er gouden confetti dwarrelt" class="home-pic" />
 				<h1>Eventsio creëert jouw droomevenement</h1>
 			</section>
 
-			<section class="intro" aria-label="Introductie">
-				<p>Eventsio is een jong bedrijf met een passie voor evenementen. Voor ons is niks te gek! Eventsio zet al jouw wensen om tot een droomevenement. Van een unieke vrijdagmiddagborrel of een themalunch tot een memorabel bedrijfsfeest. Wij organiseren evenementen die de werknemers inspireert met elkaar verbindt. Wij zorgen ervoor dat jouw evenement anders is dan 'normaal'. Wat dacht je van een gave illusionist en een speciale catering op jouw vrijdagmiddagborrel?</p>
-				<p>Onze professionaliteit en service staat voorop en zorgt samen met onze creativiteit ervoor dat je tijdens jouw eigen evenement kunt genieten. Kies ervoor om ontzorgt te worden, kies voor Eventsio!</p>
-				<p>Ben je benieuwd geworden wat Eventsio voor jouw bedrijf kan betekenen? Neem dan vrijblijvend contact met ons op.</p>
+			<section class="intro all-items" aria-label="Introductie">
+				<div>
+					<div>
+						<p>Eventsio is een jong bedrijf met een passie voor evenementen. Voor ons is niks te gek! Eventsio zet al jouw wensen om tot een droomevenement. Van een unieke vrijdagmiddagborrel of een themalunch tot een memorabel bedrijfsfeest. Wij organiseren evenementen die de werknemers inspireert met elkaar verbindt. Wij zorgen ervoor dat jouw evenement anders is dan 'normaal'. Wat dacht je van een gave illusionist en een speciale catering op jouw vrijdagmiddagborrel?</p>
+						<p>Onze professionaliteit en service staat voorop en zorgt samen met onze creativiteit ervoor dat je tijdens jouw eigen evenement kunt genieten. Kies ervoor om ontzorgt te worden, kies voor Eventsio!</p>
+						<p>Ben je benieuwd geworden wat Eventsio voor jouw bedrijf kan betekenen? Neem dan vrijblijvend contact met ons op.</p>
+					</div>
+					<img src="assets/sfeerfoto9.jpg" alt="" class="intro-pic">
+				</div>
 				<a href="mailto:eventsio.asd@gmail.com" class="offerte-button" aria-label="Offerte aanvragen">Vraag offerte aan</a>
 			</section>
 
 			<section class="projects">
 				<h2>Projecten</h2>
 
-				<div class="carousel">
-					<a href="." class="carousel-a">
+				<div class="carousel all-items">
+					<div class="carousel-div">
 						<picture class="carousel-picture">
 							<img class="carousel-img" src="assets/sfeerfoto1.jpg" alt="DJ tafel op een feest">
 						</picture>
@@ -65,7 +70,7 @@
 						<picture class="carousel-picture">
 							<img class="carousel-img" src="assets/sfeerfoto11.jpg" alt="Zwart wit foto van een bar">
 						</picture>
-					</a>
+					</div>
 					<span class="carousel-indicator">
 						<span class="carousel-indicator-span">
 							<span class="carousel-indicator-span-span is-active"></span>
@@ -81,22 +86,28 @@
 
 			<section class="about">
 				<h2>Over ons</h2>
-				<p>Eventsio is een evenementenbureau gericht op de zakelijke sector. Denk hierbij aan borrels, personeelsfeesten, bedrijfsfeesten, productlanceringen of een zakelijke lunch. Wij nemen de volledige organisatie op ons en zorgen ervoor dat alles van A-tot-Z geregeld is.</p>
-				<p>Eventsio bestaat uit een team van drie energieke, sociale en ondernemende meiden. Organiseren is al jaren onze passie en dit hebben wij eindelijk kunnen omzetten tot een eigen onderneming; Eventsio. Onze kennis, ervaring en passie zetten wij in om jouw evenement te laten slagen.</p>
-				<img src="assets/sfeerfoto10.jpg" alt="Foto van de drie oprichters van het bedrijf" />
+				<div class="all-items">
+					<div class="text">
+						<p>Eventsio is een evenementenbureau gericht op de zakelijke sector. Denk hierbij aan borrels, personeelsfeesten, bedrijfsfeesten, productlanceringen of een zakelijke lunch. Wij nemen de volledige organisatie op ons en zorgen ervoor dat alles van A-tot-Z geregeld is.</p>
+						<p>Eventsio bestaat uit een team van drie energieke, sociale en ondernemende meiden. Organiseren is al jaren onze passie en dit hebben wij eindelijk kunnen omzetten tot een eigen onderneming; Eventsio. Onze kennis, ervaring en passie zetten wij in om jouw evenement te laten slagen.</p>
+					</div>
+					<img src="assets/sfeerfoto10.jpg" alt="Foto van de drie oprichters van het bedrijf" />
+				</div>
 			</section>
 		</main>
 
 		<footer>
-			<ul class="footer-menu">
-				<li>Algemene voorwaarden</li>
-				<li>FAQ</li>
-				<li>Contact</li>
-			</ul>
-			<div class="social-icons">
-				<a href="."><img src="assets/icon-facebook.png" alt="Link naar Facebook"/></a>
-				<a href="."><img src="assets/icon-instagram.png" alt="Link naar Instagram"/></a>
-				<a href="https://www.linkedin.com/company/eventsio/"><img src="assets/icon-linkedin.png" alt="Link naar LinkedIn"/></a>
+			<div>
+				<ul class="footer-menu">
+					<li><a href=".">Algemene voorwaarden</a></li>
+					<li><a href=".">FAQ</a></li>
+					<li><a href=".">Contact</a></li>
+				</ul>
+				<div class="social-icons">
+					<a href="."><img src="assets/icon-facebook.png" alt="Link naar Facebook"/></a>
+					<a href="."><img src="assets/icon-instagram.png" alt="Link naar Instagram"/></a>
+					<a href="https://www.linkedin.com/company/eventsio/"><img src="assets/icon-linkedin.png" alt="Link naar LinkedIn"/></a>
+				</div>
 			</div>
 			<p>&copy; Eventsio 2022</p>
 		</footer>
