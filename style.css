@@ -7,6 +7,8 @@
 	--section-margin-large-screen: 5rem 0;
 	--margin-bottom-p: 1.5rem;
 	--arrow-size: 2rem;
+	--border-radius-img: 3px;
+	--font-headings: Helvetica, sans-serif;
 }
 
 * {
@@ -30,14 +32,19 @@
 
 body {
 	background-color: #fff;
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
+}
+
+h1, h2 {
+	font: var(--font-headings);
 }
 
 img {
 	width: 100%;
 	height: auto;
 	max-width: 30rem;
+	border-radius: var(--border-radius-img);
 }
 
 main {
@@ -79,11 +86,11 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	clip-path: inset(0 0 -10px);
-	box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 	position: relative;
 	z-index: 1;
 	background-color: #fff;
+	clip-path: inset(0 0 -10px);
+	box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 }
 
 .logo-header {
@@ -112,14 +119,14 @@ header {
 	height: 5px;
 	width: 2rem;
 	background-color: var(--orange);
-	border-radius: 0.5rem;
+	border-radius: 1px;
 }
 
 /* Navigatie */
 
 nav {
 	position: absolute;
-	transform: translateY(-100%);
+	transform: translateY(-101%);
 	transition: 0.7s ease-in;
 	right: 1px;
 	min-width: 40%;
@@ -162,7 +169,8 @@ section:nth-of-type(1) {
 
 h1 {
 	color: var(--orange);
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
 	text-align: center;
 	text-shadow: 1px 1px rgb(0, 0, 0);
 }
@@ -220,6 +228,7 @@ h1 {
 	scroll-snap-type: x mandatory;
 	scrollbar-width: none;
 	align-items: center;
+	border-radius: var(--border-radius-img);
 }
 
 .carousel-div::-webkit-scrollbar { 
@@ -346,9 +355,9 @@ footer p {
 		max-width: 30rem;
 	}
 
-	/* .carousel-img {
-		width: 485px;
-	} */
+	header {
+		box-shadow: none;
+	}
 
 	.hamburger-menu {
 		display: none;
@@ -368,7 +377,6 @@ footer p {
 		justify-content: center;
 		align-items: center;
 		clip-path: inset(0 0 -10px);
-		box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 	}
 
 	.nav-item {
@@ -392,7 +400,7 @@ footer p {
 	}
 
 	footer p {
-		width: 100vw;
+		width: 100%;
 		text-align: center;
 	}
 }
@@ -421,6 +429,7 @@ footer p {
 
 	h1 {
 		font-size: 3rem;
+		max-width: 32rem;
 	}
 
 	.home-pic {
