@@ -44,7 +44,3 @@ function scrollLeftOrRight(uiEvent) {
  // Volg de <a href=""> niet als we hier zijn gekomen..
  uiEvent.preventDefault();
 }
-
-// Indicator carousel
-
-document.querySelector('.carousel-div').addEventListener('click', scrollLeftOrRight);
