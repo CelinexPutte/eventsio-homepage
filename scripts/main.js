@@ -13,17 +13,6 @@ function menuToggle() {
 document.querySelector(".carousel-div").addEventListener('click', scrollLeftOrRight);
 
 function scrollLeftOrRight(uiEvent) {
-
- if (uiEvent.target.nodeName == 'A' && uiEvent.offsetX == 0 && uiEvent.offsetY == 0) {
-  // Keyboard enter; de muis x en y positie zijn dan altijd 0.
-  // In dat geval, gewoon de link volgen
-  return;
- } else if (uiEvent.target.nodeName == 'IMG') {
-  // Een click op een deel van de <img>, niet op de ::before en ::after pijltjes
-  // (want die zijn onderdeel van de <a>)
-  // In dat geval, ook gewoon de link volgen
-  return;
- }
  // Niet heel relevant, maar hiermee zorg je dat de afmetingen van de carrousel in CSS blijven
  // En pas in JavaScript worden opgevraagd
  var scrollWidth = this.scrollWidth;
@@ -41,6 +30,4 @@ function scrollLeftOrRight(uiEvent) {
  this.scrollBy({
   left: scrollXBy
  });
- // Volg de <a href=""> niet als we hier zijn gekomen..
- uiEvent.preventDefault();
 }
