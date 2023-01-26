@@ -1,13 +1,12 @@
 # Eventsio homepagina
 De homepagina voor Eventsio.
 
-<img src="https://user-images.githubusercontent.com/112859814/214544095-a8d2b406-a01b-4dc6-9ea7-25eccadc039f.png" alt="Website op desktop" width=75%><img src="https://user-images.githubusercontent.com/112859814/214544090-54e55bbb-3d45-4cef-b1cd-4f6526436a77.png" alt="Website op mobiel" width=20%>
-
+<img src="https://user-images.githubusercontent.com/112859814/214947602-6c0ed876-6e15-439d-9aab-43f350b28cf7.png" alt="Website op desktop" width=75%><img src="https://user-images.githubusercontent.com/112859814/214544090-54e55bbb-3d45-4cef-b1cd-4f6526436a77.png" alt="Website op mobiel" width=20%>
 
 ## Inhoudsopgave
 <ul>
     <li>🧑 Opdrachtgever</li>
-    <li>📝 De opdracht</li>
+    <li>📝 Opdracht</li>
     <li>💻 Gebruik</li>
     <li>✅ Checklist</li>
     <li>🔒 Licentie</li>
@@ -16,7 +15,7 @@ De homepagina voor Eventsio.
 ## 🧑 Opdrachtgever
 De opdrachtgever is Eventsio. Dit is een evenementenbureau opgezet door drie studenten van de minor ondernemerschap op de HvA. Zij organiseren evenementen voor bedrijven. Zij richten zich hierbij vooral op kleine en middelgrote bedrijven met normale kantooruren. 
 
-## 📝 De opdracht
+## 📝 Opdracht
 Eventsio wil een homepagina om een goede representatie van hun bedrijf te hebben.
 
 ## 💻 Gebruik
@@ -26,8 +25,8 @@ Eventsio wil een homepagina om een goede representatie van hun bedrijf te hebben
 
 **Desktop**
 
-<img src="https://user-images.githubusercontent.com/112859814/214544095-a8d2b406-a01b-4dc6-9ea7-25eccadc039f.png" alt="Website op desktop" width=45%> <img src="https://user-images.githubusercontent.com/112859814/214545583-6d272551-e86b-4f04-8d25-2e99c603f27a.png" alt="Website op desktop" width=45%>
-<img src="https://user-images.githubusercontent.com/112859814/214545588-acf76f2c-f43f-41b0-9c31-f55a0b521859.png" alt="Website op desktop" width=45%> <img src="https://user-images.githubusercontent.com/112859814/214545590-c98060e4-a24c-408d-bb8f-84c423a86958.png" alt="Website op desktop" width=45%>
+<img src="https://user-images.githubusercontent.com/112859814/214947602-6c0ed876-6e15-439d-9aab-43f350b28cf7.png" alt="Website op desktop" width=45%> <img src="https://user-images.githubusercontent.com/112859814/214947751-55ae3817-5cdc-483b-a7a0-ce62377e10e4.png" alt="Website op desktop" width=45%>
+<img src="https://user-images.githubusercontent.com/112859814/214947758-0158f929-09cb-4f91-8974-9661a27d741a.png" alt="Website op desktop" width=45%> <img src="https://user-images.githubusercontent.com/112859814/214947762-603ac1f9-5951-48ce-9129-7ba71c802462.png" alt="Website op desktop" width=45%>
 
 **Carrousel**
 
